@@ -22,7 +22,12 @@ void merge(int* arr, int left, int mid, int right, int length){
 
     for (int i = 0; i < n1; i++) leftSubarray[i] = arr[left + i];
     for (int j = 0; j < n2; j++) rightSubarray[j] = arr[mid + j + 1];
-
+    cout << "Left sub array = ";
+    for (int i = 0; i < n1; i++) cout << leftSubarray[i] << " ";
+    cout << endl;
+    cout << "Right sub array = ";
+    for (int j = 0; j < n2; j++) cout << rightSubarray[j] << " ";
+    cout << endl;
     i = 0;      // Index of left sub array
     j = 0;      // Index of right subarray
     k = left;   // Index of pseudo-sorted array
